@@ -13,3 +13,18 @@ switch (opcion) {
         var resultado = num1 - num2;
         console.log("El resultado de la resta es: " + resultado);
         break;
+    case "3":
+        var resultado = num1 * num2;
+        console.log("El resultado de la multiplicacion es: " + resultado);
+        break;
+    case "4":
+        if (num2 !== 0) {
+            var resultado = num1 / num2;
+            console.log("El resultado de la division es: " + resultado);
+        } else {
+            console.log("Error: No se puede dividir por cero.");
+        }
+        break;
+    default:
+        console.log("Opcion no valida. Por favor, ingrese una opcion del 1 al 4.");
+}
